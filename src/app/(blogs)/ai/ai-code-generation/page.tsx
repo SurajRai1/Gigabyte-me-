@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'AI Code Generation in 2024: A Developer's Complete Guide | GigabyteMe',
+  title: 'AI Code Generation in 2024: A Developer\'s Complete Guide | GigabyteMe',
   description: 'Explore how AI-powered code generation tools are revolutionizing software development. Learn about GitHub Copilot, Amazon CodeWhisperer, and best practices for AI-assisted coding.',
   keywords: 'AI code generation, GitHub Copilot, CodeWhisperer, AI programming, software development, artificial intelligence, coding assistant',
   openGraph: {
-    title: 'AI Code Generation in 2024: A Developer's Complete Guide',
+    title: 'AI Code Generation in 2024: A Developer\'s Complete Guide',
     description: 'Master AI-powered code generation tools and transform your development workflow.',
     type: 'article',
     publishedTime: '2024-01-15T00:00:00.000Z',
