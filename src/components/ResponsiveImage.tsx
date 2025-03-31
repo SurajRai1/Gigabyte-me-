@@ -6,12 +6,12 @@ import { useState } from 'react';
 interface ResponsiveImageProps {
   src: string;
   alt: string;
-  aspectRatio?: '16:9' | '4:3' | '21:9';
+  aspectRatio?: '16:9' | '4:3' | '21:9' | '1:1';
   priority?: boolean;
   className?: string;
   credit?: {
     name: string;
-    url: string;
+    url?: string;
   };
   insideLink?: boolean;
 }
@@ -32,6 +32,7 @@ export default function ResponsiveImage({
     '16:9': 'pb-[56.25%]', // (9 / 16) * 100
     '4:3': 'pb-[75%]',     // (3 / 4) * 100
     '21:9': 'pb-[42.85%]', // (9 / 21) * 100
+    '1:1': 'pb-[100%]',    // Square aspect ratio
   }[aspectRatio];
 
   const handleCreditClick = (e: React.MouseEvent) => {
@@ -66,25 +67,25 @@ export default function ResponsiveImage({
         )}
 
         {/* Image credit */}
-        {credit && !isLoading && (
-          insideLink ? (
-            <button
-              onClick={handleCreditClick}
-              className="absolute bottom-2 right-2 text-xs text-white bg-black/50 px-2 py-1 rounded-full hover:bg-black/70 transition-colors"
-              type="button"
-            >
-              Photo by {credit.name}
-            </button>
-          ) : (
-            <a
-              href={credit.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute bottom-2 right-2 text-xs text-white bg-black/50 px-2 py-1 rounded-full hover:bg-black/70 transition-colors"
-            >
-              Photo by {credit.name}
-            </a>
-          )
+        {credit && (
+          <div 
+            className="absolute bottom-0 right-0 bg-black/50 text-white text-xs px-2 py-1 rounded-tl-lg"
+            onClick={handleCreditClick}
+          >
+            {credit.url ? (
+              <a 
+                href={credit.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+                onClick={e => insideLink && e.preventDefault()}
+              >
+                © {credit.name}
+              </a>
+            ) : (
+              <span>© {credit.name}</span>
+            )}
+          </div>
         )}
       </div>
     </div>
