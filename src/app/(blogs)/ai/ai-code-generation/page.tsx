@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import React from 'react';
 
 export const metadata: Metadata = {
   title: 'AI Code Generation in 2024: A Developer\'s Complete Guide | GigabyteMe',
