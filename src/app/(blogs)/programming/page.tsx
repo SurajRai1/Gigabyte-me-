@@ -19,7 +19,7 @@ export default function ProgrammingIndex() {
             Programming & Development
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-400">
-            Stay up to date with modern development practices and master the tools that power today's software.
+            Stay up to date with modern development practices and master the tools that power today&apos;s software.
           </p>
         </header>
 

@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Contact Us | GigabyteMe',
-  description: "Get in touch with the GigabyteMe team. Whether you have questions, feedback, or business inquiries, we'd love to hear from you.",
+  description: "Get in touch with the GigabyteMe team. Whether you have questions, feedback, or business inquiries, we&apos;d love to hear from you.",
   keywords: 'contact GigabyteMe, tech blog contact, reach out, feedback, inquiries',
 };
 
@@ -15,7 +14,7 @@ export default function ContactPage() {
           Contact Us
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-          Have questions or feedback? We'd love to hear from you. Get in touch with our team.
+          Have questions or feedback? We&apos;d love to hear from you. Get in touch with our team.
         </p>
       </header>
 
@@ -60,7 +59,7 @@ export default function ContactPage() {
                 id="subject"
                 name="subject"
                 className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent dark:bg-gray-800"
-                placeholder="What's this about?"
+                placeholder="What&apos;s this about?"
                 required
               />
             </div>
@@ -118,7 +117,7 @@ export default function ContactPage() {
             <div className="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-lg">
               <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-3">Write for Us</h3>
               <p className="text-gray-600 dark:text-gray-400 mb-4">
-                Are you passionate about technology and love writing? We're always looking for talented tech writers to join our team.
+                Are you passionate about technology and love writing? We&apos;re always looking for talented tech writers to join our team.
               </p>
               <a
                 href="/write-for-us"

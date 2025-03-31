@@ -32,7 +32,7 @@ export default function AICodeGenerationGuide() {
           </span>
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-          The Rise of AI in Code Generation: A Developer's Guide
+          The Rise of AI in Code Generation: A Developer&apos;s Guide
         </h1>
         <div className="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
           <time dateTime="2024-01-22">January 22, 2024</time>
@@ -88,7 +88,7 @@ export default function AICodeGenerationGuide() {
         <section id="ai-tools">
           <h2>Popular AI Coding Tools</h2>
           <p>
-            Let's explore the most powerful AI coding assistants available today and how they can enhance your 
+            Let&apos;s explore the most powerful AI coding assistants available today and how they can enhance your 
             development workflow.
           </p>
 

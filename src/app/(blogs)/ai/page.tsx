@@ -49,7 +49,7 @@ export default function AIIndex() {
                   </span>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-4">
-                  The Rise of AI in Code Generation: A Developer's Guide
+                  The Rise of AI in Code Generation: A Developer&apos;s Guide
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
                   Master AI-powered code generation with our comprehensive guide. Learn how to effectively use tools like GitHub Copilot, ChatGPT, and other AI assistants for software development.

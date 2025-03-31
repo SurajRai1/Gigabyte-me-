@@ -29,7 +29,7 @@ export default function BestLinuxDistrosGuide() {
           Best Linux Distributions for Developers in 2024
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-400">
-          Find the perfect Linux distribution for your development workflow. From user-friendly Ubuntu to highly customizable Arch Linux, we'll help you make the right choice.
+          Find the perfect Linux distribution for your development workflow. From user-friendly Ubuntu to highly customizable Arch Linux, we&apos;ll help you make the right choice.
         </p>
       </header>
 
@@ -57,7 +57,7 @@ export default function BestLinuxDistrosGuide() {
         <section id="comparison" className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Distribution Comparison</h2>
           <p className="mb-6">
-            Choosing the right Linux distribution can significantly impact your development workflow. Let's compare the most popular options based on key factors that matter to developers.
+            Choosing the right Linux distribution can significantly impact your development workflow. Let&apos;s compare the most popular options based on key factors that matter to developers.
           </p>
 
           <div className="overflow-x-auto">
@@ -153,7 +153,7 @@ export default function BestLinuxDistrosGuide() {
         <section id="fedora" className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Fedora Workstation</h2>
           <p className="mb-6">
-            Fedora Workstation offers a perfect balance between stability and cutting-edge software. It's particularly well-suited for developers working with Red Hat technologies or those who want access to the latest development tools.
+            Fedora Workstation offers a perfect balance between stability and cutting-edge software. It&apos;s particularly well-suited for developers working with Red Hat technologies or those who want access to the latest development tools.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -181,7 +181,7 @@ export default function BestLinuxDistrosGuide() {
         <section id="arch" className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Arch Linux</h2>
           <p className="mb-6">
-            Arch Linux is perfect for developers who want complete control over their system and don't mind getting their hands dirty with system configuration.
+            Arch Linux is perfect for developers who want complete control over their system and don&apos;t mind getting their hands dirty with system configuration.
           </p>
 
           <div className="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-lg mb-8">
@@ -215,7 +215,7 @@ export default function BestLinuxDistrosGuide() {
             </div>
             <div className="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-4">Clear Linux</h3>
-              <p>Intel's distribution optimized for performance and cloud development.</p>
+              <p>Intel&apos;s distribution optimized for performance and cloud development.</p>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-4">NixOS</h3>

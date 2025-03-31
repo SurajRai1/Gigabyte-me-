@@ -33,11 +33,11 @@ export default function GamingMonitorsGuide() {
             Gaming
           </span>
           <span className="inline-flex items-center rounded-full bg-green-100 dark:bg-green-900 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:text-green-300">
-            Buyer's Guide
+            Buyer&apos;s Guide
           </span>
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-          Best Gaming Monitors 2024: Ultimate Buyer's Guide
+          Best Gaming Monitors 2024: Ultimate Buyer&apos;s Guide
         </h1>
         <div className="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
           <time dateTime="2024-01-20">January 20, 2024</time>
@@ -90,7 +90,7 @@ export default function GamingMonitorsGuide() {
         <section id="key-features">
           <h2>Key Features to Consider</h2>
           <p>
-            Before diving into specific recommendations, it's important to understand the key features that make a 
+            Before diving into specific recommendations, it&apos;s important to understand the key features that make a 
             gaming monitor great. These features will directly impact your gaming experience and should be carefully 
             considered based on your specific needs and preferences.
           </p>

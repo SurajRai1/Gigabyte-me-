@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'About GigabyteMe | Your Ultimate Tech Hub',
@@ -23,9 +22,9 @@ export default function AboutPage() {
         <section className="mb-12">
           <h2>Our Mission</h2>
           <p>
-            At GigabyteMe, we're passionate about making technology accessible and understandable for everyone. 
-            Whether you're a seasoned developer, a hardware enthusiast, or someone taking their first steps into 
-            the tech world, we're here to guide you through the ever-evolving landscape of technology.
+            At GigabyteMe, we&apos;re passionate about making technology accessible and understandable for everyone. 
+            Whether you&apos;re a seasoned developer, a hardware enthusiast, or someone taking their first steps into 
+            the tech world, we&apos;re here to guide you through the ever-evolving landscape of technology.
           </p>
         </section>
 
@@ -67,7 +66,7 @@ export default function AboutPage() {
         <section className="mb-12">
           <h2>Join Our Community</h2>
           <p>
-            GigabyteMe is more than just a blog - it's a community. Follow us on social media, 
+            GigabyteMe is more than just a blog - it&apos;s a community. Follow us on social media, 
             subscribe to our newsletter, and join the conversation in our comments section to 
             connect with fellow tech enthusiasts.
           </p>
