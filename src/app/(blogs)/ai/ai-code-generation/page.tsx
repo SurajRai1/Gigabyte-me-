@@ -1,14 +1,13 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI Code Generation in 2024: A Developer\'s Complete Guide | GigabyteMe',
+  title: 'AI Code Generation in 2024: A Developer&apos;s Complete Guide | GigabyteMe',
   description: 'Master AI code generation with our comprehensive guide. Learn about GPT-4, GitHub Copilot, and other AI coding tools that are revolutionizing software development in 2024.',
   keywords: 'AI code generation, GPT-4, GitHub Copilot, AI coding tools, software development, programming, AI development',
   openGraph: {
-    title: 'AI Code Generation in 2024: A Developer\'s Complete Guide | GigabyteMe',
+    title: 'AI Code Generation in 2024: A Developer&apos;s Complete Guide | GigabyteMe',
     description: 'Master AI code generation with our comprehensive guide. Learn about GPT-4, GitHub Copilot, and other AI coding tools that are revolutionizing software development in 2024.',
     type: 'article',
     publishedTime: '2024-01-25',
@@ -26,7 +25,7 @@ export default function AICodeGenerationGuide() {
           </span>
         </div>
         <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
-          AI Code Generation in 2024: A Developer's Complete Guide
+          AI Code Generation in 2024: A Developer&apos;s Complete Guide
         </h1>
         <div className="mt-6 flex items-center gap-x-4 text-sm text-gray-500 dark:text-gray-400">
           <time dateTime="2024-01-25">January 25, 2024</time>
@@ -74,7 +73,7 @@ export default function AICodeGenerationGuide() {
 
           <h3>2. GPT-4</h3>
           <p>
-            OpenAI's GPT-4 has demonstrated remarkable capabilities in code generation, understanding complex requirements,
+            OpenAI&apos;s GPT-4 has demonstrated remarkable capabilities in code generation, understanding complex requirements,
             and providing detailed code solutions.
           </p>
         </section>
@@ -103,7 +102,7 @@ export default function AICodeGenerationGuide() {
           <ul>
             <li><Link href="/ai/chatgpt-plugins-guide">Building ChatGPT Plugins: Complete Development Guide</Link></li>
             <li><Link href="/programming/linux-command-line">Essential Linux Command Line Guide</Link></li>
-            <li><Link href="/programming/docker-containers">Docker Containers: A Beginner's Guide</Link></li>
+            <li><Link href="/programming/docker-containers">Docker Containers: A Beginner&apos;s Guide</Link></li>
           </ul>
         </section>
       </div>
