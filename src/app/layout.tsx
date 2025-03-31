@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Your go-to destination for everything tech - from gadgets and computers to AI, software, and programming languages.",
   viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0",
   other: {
-    "google-site-verification": "ca-pub-6925559648076385"
+    "google-adsense-account": "ca-pub-6925559648076385"
   }
 };
 
