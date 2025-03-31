@@ -14,9 +14,41 @@ export const images = {
     },
     linuxDistros: {
       url: 'https://images.unsplash.com/photo-1629654297299-c8506221ca97',
-      alt: 'Linux terminal showing command line interface',
-      credit: 'Roman Synkevych',
-      creditUrl: 'https://unsplash.com/@synkevych',
+      alt: 'Various Linux distributions logos and terminals showing system information',
+      credit: 'Unsplash',
+      creditUrl: 'https://unsplash.com',
+      distroImages: {
+        ubuntu: {
+          url: 'https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png',
+          alt: 'Ubuntu Linux Logo',
+          credit: 'Canonical Ltd'
+        },
+        manjaro: {
+          url: 'https://manjaro.org/img/logo.svg',
+          alt: 'Manjaro Linux Logo',
+          credit: 'Manjaro GmbH & Co. KG'
+        },
+        fedora: {
+          url: 'https://getfedora.org/static/images/fedora-logo.png',
+          alt: 'Fedora Linux Logo',
+          credit: 'Red Hat, Inc'
+        },
+        arch: {
+          url: 'https://archlinux.org/static/logos/archlinux-logo-dark-90dpi.ebdee92a15b3.png',
+          alt: 'Arch Linux Logo',
+          credit: 'Arch Linux'
+        },
+        debian: {
+          url: 'https://www.debian.org/logos/openlogo-nd.svg',
+          alt: 'Debian Linux Logo',
+          credit: 'Software in the Public Interest, Inc'
+        },
+        opensuse: {
+          url: 'https://en.opensuse.org/images/4/44/Button-colour.png',
+          alt: 'openSUSE Linux Logo',
+          credit: 'SUSE LLC'
+        }
+      }
     },
     nextGenCPUs: {
       url: 'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea',
