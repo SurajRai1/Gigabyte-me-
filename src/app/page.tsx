@@ -1,103 +1,241 @@
-import Image from "next/image";
+import Link from "next/link";
+import ResponsiveImage from "@/components/ResponsiveImage";
+import { images } from "@/config/images";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
+      {/* Hero Article */}
+      <article className="mb-8 sm:mb-16">
+        <div className="flex flex-col md:flex-row gap-4 sm:gap-8">
+          <div className="flex-1 order-2 md:order-1">
+            <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900 px-2.5 py-0.5 text-xs sm:text-sm font-medium text-blue-800 dark:text-blue-300 mb-3 sm:mb-4">
+              Featured
+            </span>
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">
+              Building Your Dream Gaming PC: Ultimate Guide 2024
+            </h1>
+            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4 sm:mb-6">
+              From choosing the right components to assembly tips - everything you need to know about building a powerful gaming rig in 2024.
+            </p>
+            <Link
+              href="/guides/gaming-pc-build-2024"
+              className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+            >
+              Read Full Guide
+              <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
+          <div className="flex-1 order-1 md:order-2">
+            <ResponsiveImage
+              src={images.hero.url}
+              alt={images.hero.alt}
+              aspectRatio="4:3"
           priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              credit={{
+                name: images.hero.credit,
+                url: images.hero.creditUrl,
+              }}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </article>
+
+      {/* Latest Articles */}
+      <section className="mb-8 sm:mb-16">
+        <div className="flex items-center justify-between mb-4 sm:mb-8">
+          <h2 className="text-base sm:text-lg font-medium text-gray-900 dark:text-white">Latest Articles</h2>
+          <Link href="/latest" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
+            View all →
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
+          {[
+            {
+              title: "The Rise of AI in Code Generation",
+              excerpt: "How AI-powered tools like GitHub Copilot are transforming software development.",
+              category: "AI & Programming",
+              readTime: "7",
+              image: images.articles.aiCoding,
+              href: "/ai/ai-code-generation-guide",
+            },
+            {
+              title: "Best Linux Distros for Developers",
+              excerpt: "A comprehensive comparison of Linux distributions tailored for development work.",
+              category: "Software",
+              readTime: "8",
+              image: images.articles.linuxDistros,
+              href: "/guides/linux-distros-guide",
+            },
+            {
+              title: "Next-Gen CPUs: What to Expect",
+              excerpt: "Analyzing the upcoming processor releases and their potential impact on computing.",
+              category: "Hardware",
+              readTime: "6",
+              image: images.articles.nextGenCPUs,
+              href: "/guides/next-gen-cpus",
+            }
+          ].map((article, i) => (
+            <Link key={i} href={article.href} className="block group">
+              <article className="h-full">
+                <ResponsiveImage
+                  src={article.image.url}
+                  alt={article.image.alt}
+                  aspectRatio="16:9"
+                  className="mb-3 sm:mb-4 transform transition-transform group-hover:scale-[1.02]"
+                  credit={{
+                    name: article.image.credit,
+                    url: article.image.creditUrl,
+                  }}
+                  insideLink={true}
+                />
+                <h3 className="text-base sm:text-lg font-medium text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-2">
+                  {article.title}
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">
+                  {article.excerpt}
+                </p>
+                <div className="flex items-center text-xs sm:text-sm text-gray-500 dark:text-gray-400">
+                  <span>{article.readTime} min read</span>
+                  <span className="mx-2">•</span>
+                  <span>{article.category}</span>
+                </div>
+              </article>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Must Read */}
+      <section className="mb-8 sm:mb-16">
+        <h2 className="text-base sm:text-lg font-medium text-gray-900 dark:text-white mb-4 sm:mb-8">Must Read Guides</h2>
+        <div className="space-y-4 sm:space-y-8">
+          {[
+            {
+              title: "Mechanical Keyboards: A Complete Guide",
+              excerpt: "Everything you need to know about switches, layouts, and customization options.",
+              category: "Hardware",
+              readTime: "10",
+              image: images.guides.mechanicalKeyboards,
+              href: "/guides/mechanical-keyboards-guide",
+            },
+            {
+              title: "Getting Started with Docker",
+              excerpt: "Learn how to containerize your applications for better development and deployment.",
+              category: "Development",
+              readTime: "12",
+              image: images.guides.docker,
+              href: "/guides/docker-guide",
+            },
+            {
+              title: "Understanding Neural Networks",
+              excerpt: "A beginner-friendly guide to the fundamentals of neural networks and deep learning.",
+              category: "AI",
+              readTime: "15",
+              image: images.guides.neuralNetworks,
+              href: "/ai/neural-networks-guide",
+            }
+          ].map((guide, i) => (
+            <Link key={i} href={guide.href} className="block group">
+              <article className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                <div className="w-full sm:w-48 flex-shrink-0">
+                  <ResponsiveImage
+                    src={guide.image.url}
+                    alt={guide.image.alt}
+                    aspectRatio="4:3"
+                    className="transform transition-transform group-hover:scale-[1.02]"
+                    credit={{
+                      name: guide.image.credit,
+                      url: guide.image.creditUrl,
+                    }}
+                    insideLink={true}
+                  />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-base sm:text-lg font-medium text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-2">
+                    {guide.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">
+                    {guide.excerpt}
+                  </p>
+                  <div className="flex items-center text-xs sm:text-sm text-gray-500 dark:text-gray-400">
+                    <span>{guide.readTime} min read</span>
+                    <span className="mx-2">•</span>
+                    <span>{guide.category}</span>
+                  </div>
+                </div>
+              </article>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Weekly Highlights */}
+      <section>
+        <div className="flex items-center justify-between mb-4 sm:mb-8">
+          <h2 className="text-base sm:text-lg font-medium text-gray-900 dark:text-white">Weekly Highlights</h2>
+          <Link href="/highlights" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
+            View all →
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
+          {[
+            {
+              title: "Python vs Rust: Performance Showdown",
+              excerpt: "Comparing the performance characteristics of Python and Rust in real-world scenarios.",
+              category: "Programming",
+              readTime: "8",
+              image: images.highlights.pythonVsRust,
+              href: "/programming/python-vs-rust",
+            },
+            {
+              title: "Best Budget GPUs for 2024",
+              excerpt: "Top graphics cards that offer the best value for money this year.",
+              category: "Hardware",
+              readTime: "6",
+              image: images.highlights.budgetGPUs,
+              href: "/guides/budget-gpus-2024",
+            },
+            {
+              title: "ChatGPT Plugins Development",
+              excerpt: "How to create and deploy your own ChatGPT plugins using the OpenAI API.",
+              category: "AI",
+              readTime: "9",
+              image: images.highlights.chatGPTPlugins,
+              href: "/ai/chatgpt-plugins-guide",
+            }
+          ].map((article, i) => (
+            <Link key={i} href={article.href} className="block group">
+              <article className="h-full">
+                <ResponsiveImage
+                  src={article.image.url}
+                  alt={article.image.alt}
+                  aspectRatio="16:9"
+                  className="mb-3 sm:mb-4 transform transition-transform group-hover:scale-[1.02]"
+                  credit={{
+                    name: article.image.credit,
+                    url: article.image.creditUrl,
+                  }}
+                  insideLink={true}
+                />
+                <h3 className="text-base sm:text-lg font-medium text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors mb-2">
+                  {article.title}
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">
+                  {article.excerpt}
+                </p>
+                <div className="flex items-center text-xs sm:text-sm text-gray-500 dark:text-gray-400">
+                  <span>{article.readTime} min read</span>
+                  <span className="mx-2">•</span>
+                  <span>{article.category}</span>
+                </div>
+              </article>
+            </Link>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
