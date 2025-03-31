@@ -5,8 +5,30 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'images.unsplash.com',
-        port: '',
-        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'assets.ubuntu.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'manjaro.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'getfedora.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'archlinux.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.debian.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'en.opensuse.org',
       },
     ],
   },
