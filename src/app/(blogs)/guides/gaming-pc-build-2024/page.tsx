@@ -1,22 +1,17 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import React from 'react';
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Building Your Dream Gaming PC: Ultimate Guide 2024 | GigabyteMe",
-  description: "A comprehensive guide to building a high-performance gaming PC in 2024. Learn about component selection, assembly tips, and optimization techniques.",
-  keywords: "gaming PC build, PC building guide 2024, custom PC build, gaming computer assembly, PC components guide",
+  description: "Learn how to build the perfect gaming PC in 2024. From component selection to assembly, our comprehensive guide covers everything you need to know.",
+  keywords: "gaming PC build, PC building guide, gaming computer, custom PC, hardware guide, gaming components",
   openGraph: {
-    title: "Building Your Dream Gaming PC: Ultimate Guide 2024",
-    description: "Master the art of building your own gaming PC with our comprehensive 2024 guide. From component selection to final assembly.",
-    images: [
-      {
-        url: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c",
-        width: 1200,
-        height: 630,
-        alt: "High-end gaming PC build with RGB lighting",
-      },
-    ],
+    title: "Building Your Dream Gaming PC: Ultimate Guide 2024 | GigabyteMe",
+    description: "Learn how to build the perfect gaming PC in 2024. From component selection to assembly, our comprehensive guide covers everything you need to know.",
+    type: "article",
+    publishedTime: "2024-01-25",
+    authors: ["GigabyteMe Team"],
   },
 };
 
@@ -33,14 +28,14 @@ export default function GamingPCBuildGuide() {
             Gaming
           </span>
           <span className="inline-flex items-center rounded-full bg-green-100 dark:bg-green-900 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:text-green-300">
-            Guide
+            DIY Guide
           </span>
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
           Building Your Dream Gaming PC: Ultimate Guide 2024
         </h1>
         <div className="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
-          <time dateTime="2024-01-15">January 15, 2024</time>
+          <time dateTime="2024-01-25">January 25, 2024</time>
           <span>•</span>
           <span>15 min read</span>
         </div>
@@ -54,25 +49,16 @@ export default function GamingPCBuildGuide() {
             <a href="#introduction" className="text-blue-600 dark:text-blue-400 hover:underline">Introduction</a>
           </li>
           <li>
-            <a href="#component-selection" className="text-blue-600 dark:text-blue-400 hover:underline">Component Selection</a>
-            <ul className="ml-4 mt-2 space-y-2">
-              <li><a href="#cpu" className="text-blue-600 dark:text-blue-400 hover:underline">CPU Selection</a></li>
-              <li><a href="#gpu" className="text-blue-600 dark:text-blue-400 hover:underline">GPU Selection</a></li>
-              <li><a href="#motherboard" className="text-blue-600 dark:text-blue-400 hover:underline">Motherboard Selection</a></li>
-              <li><a href="#memory" className="text-blue-600 dark:text-blue-400 hover:underline">Memory Selection</a></li>
-              <li><a href="#storage" className="text-blue-600 dark:text-blue-400 hover:underline">Storage Selection</a></li>
-              <li><a href="#psu" className="text-blue-600 dark:text-blue-400 hover:underline">Power Supply Selection</a></li>
-              <li><a href="#case" className="text-blue-600 dark:text-blue-400 hover:underline">Case Selection</a></li>
-            </ul>
+            <a href="#components" className="text-blue-600 dark:text-blue-400 hover:underline">Component Selection</a>
           </li>
           <li>
             <a href="#assembly" className="text-blue-600 dark:text-blue-400 hover:underline">Assembly Guide</a>
           </li>
           <li>
-            <a href="#optimization" className="text-blue-600 dark:text-blue-400 hover:underline">Optimization Tips</a>
+            <a href="#testing" className="text-blue-600 dark:text-blue-400 hover:underline">Testing & Optimization</a>
           </li>
           <li>
-            <a href="#troubleshooting" className="text-blue-600 dark:text-blue-400 hover:underline">Troubleshooting</a>
+            <a href="#budget-options" className="text-blue-600 dark:text-blue-400 hover:underline">Budget Options</a>
           </li>
         </ul>
       </nav>
@@ -82,48 +68,74 @@ export default function GamingPCBuildGuide() {
         <section id="introduction">
           <h2>Introduction</h2>
           <p>
-            Building your own gaming PC in 2024 offers an unparalleled combination of performance, customization, and value. 
-            With the latest hardware releases from AMD, Intel, and NVIDIA, along with increasingly competitive pricing, 
-            there's never been a better time to embark on your PC building journey. This comprehensive guide will walk you 
-            through every step of the process, from selecting components to optimizing your final build.
+            Building your own gaming PC can be an exciting and rewarding experience. This guide will walk you 
+            through the process of selecting components and assembling your dream gaming machine. Whether you&apos;re 
+            a first-time builder or looking to upgrade your existing system, we&apos;ve got you covered.
           </p>
         </section>
 
-        <section id="component-selection">
+        <section id="components">
           <h2>Component Selection</h2>
           <p>
-            The foundation of any great gaming PC lies in choosing the right components. We'll break down each component 
-            category, discussing the latest options, price-to-performance considerations, and our top recommendations for 
-            different budget levels.
+            Choosing the right components is crucial for building a balanced gaming PC. Here are the key components 
+            you&apos;ll need:
           </p>
+          <ul>
+            <li>CPU (Processor)</li>
+            <li>GPU (Graphics Card)</li>
+            <li>Motherboard</li>
+            <li>RAM (Memory)</li>
+            <li>Storage (SSD/HDD)</li>
+            <li>Power Supply</li>
+            <li>Case</li>
+            <li>Cooling Solution</li>
+          </ul>
+        </section>
 
-          <section id="cpu">
-            <h3>CPU Selection</h3>
-            <p>
-              The CPU (Central Processing Unit) is the brain of your gaming PC. In 2024, the competition between AMD and 
-              Intel has resulted in excellent options at every price point:
-            </p>
-            <div className="not-prose mb-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="bg-gray-50 dark:bg-gray-800/50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-lg mb-2">High-End Options</h4>
-                  <ul className="list-disc list-inside space-y-1">
-                    <li>Intel Core i9-14900K</li>
-                    <li>AMD Ryzen 9 7950X3D</li>
-                  </ul>
-                </div>
-                <div className="bg-gray-50 dark:bg-gray-800/50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-lg mb-2">Mid-Range Options</h4>
-                  <ul className="list-disc list-inside space-y-1">
-                    <li>Intel Core i5-14600K</li>
-                    <li>AMD Ryzen 7 7800X3D</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
+        <section id="assembly">
+          <h2>Assembly Guide</h2>
+          <p>
+            Follow these steps to assemble your gaming PC:
+          </p>
+          <ol>
+            <li>Prepare your workspace</li>
+            <li>Install the CPU and cooler</li>
+            <li>Mount the motherboard</li>
+            <li>Install RAM and storage</li>
+            <li>Connect power supply</li>
+            <li>Install graphics card</li>
+            <li>Connect case fans and cables</li>
+            <li>Test the system</li>
+          </ol>
+        </section>
 
-          {/* Continue with other sections... */}
+        <section id="testing">
+          <h2>Testing & Optimization</h2>
+          <p>
+            After assembly, it&apos;s important to:
+          </p>
+          <ul>
+            <li>Check all connections</li>
+            <li>Update drivers</li>
+            <li>Monitor temperatures</li>
+            <li>Run stress tests</li>
+            <li>Optimize settings</li>
+          </ul>
+        </section>
+
+        <section id="budget-options">
+          <h2>Budget Options</h2>
+          <p>
+            Building a gaming PC doesn&apos;t have to break the bank. Here are some budget-friendly component 
+            recommendations:
+          </p>
+          <ul>
+            <li>Entry-level CPUs</li>
+            <li>Mid-range GPUs</li>
+            <li>Basic motherboards</li>
+            <li>16GB RAM kits</li>
+            <li>SSD storage</li>
+          </ul>
         </section>
 
         {/* Related Articles */}
@@ -136,23 +148,23 @@ export default function GamingPCBuildGuide() {
             >
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                  Best Gaming Monitors for 2024
+                  Best Gaming Monitors 2024: Ultimate Buyer&apos;s Guide
                 </h3>
                 <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-                  Find the perfect display for your gaming setup with our comprehensive monitor guide.
+                  Find the perfect monitor to pair with your new gaming PC.
                 </p>
               </div>
             </Link>
             <Link 
-              href="/guides/pc-maintenance-guide"
+              href="/guides/desk-setup-guide"
               className="group block bg-gray-50 dark:bg-gray-800/50 rounded-lg overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             >
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                  Essential PC Maintenance Guide
+                  Ultimate Gaming Desk Setup Guide
                 </h3>
                 <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-                  Learn how to keep your gaming PC running smoothly with our maintenance tips and tricks.
+                  Create the perfect gaming environment for your new PC.
                 </p>
               </div>
             </Link>

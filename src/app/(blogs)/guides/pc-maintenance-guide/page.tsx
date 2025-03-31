@@ -1,22 +1,17 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import React from 'react';
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Essential PC Maintenance Guide: Keep Your Gaming PC Running Smoothly | GigabyteMe",
-  description: "Learn how to maintain and optimize your gaming PC for peak performance. Expert tips on hardware cleaning, software optimization, and troubleshooting common issues.",
-  keywords: "PC maintenance, computer optimization, gaming PC care, hardware cleaning, software optimization, PC troubleshooting, system maintenance",
+  title: "Essential PC Maintenance Guide | GigabyteMe",
+  description: "Learn how to keep your gaming PC running smoothly with our comprehensive maintenance guide. From cleaning to optimization, we&apos;ve got you covered.",
+  keywords: "PC maintenance, computer cleaning, system optimization, hardware maintenance, software updates, gaming PC care",
   openGraph: {
-    title: "Essential PC Maintenance Guide: Keep Your Gaming PC Running Smoothly",
-    description: "Master the art of PC maintenance with our comprehensive guide. From hardware cleaning to software optimization, learn how to keep your gaming PC in top condition.",
-    images: [
-      {
-        url: "https://images.unsplash.com/photo-1587202372775-e229f172b9d7",
-        width: 1200,
-        height: 630,
-        alt: "PC maintenance and cleaning tools",
-      },
-    ],
+    title: "Essential PC Maintenance Guide | GigabyteMe",
+    description: "Learn how to keep your gaming PC running smoothly with our comprehensive maintenance guide. From cleaning to optimization, we&apos;ve got you covered.",
+    type: "article",
+    publishedTime: "2024-01-25",
+    authors: ["GigabyteMe Team"],
   },
 };
 
@@ -30,19 +25,19 @@ export default function PCMaintenanceGuide() {
             Hardware
           </span>
           <span className="inline-flex items-center rounded-full bg-purple-100 dark:bg-purple-900 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:text-purple-300">
-            Software
+            Maintenance
           </span>
           <span className="inline-flex items-center rounded-full bg-green-100 dark:bg-green-900 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:text-green-300">
-            Maintenance
+            Guide
           </span>
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-          Essential PC Maintenance Guide: Keep Your Gaming PC Running Smoothly
+          Essential PC Maintenance Guide
         </h1>
         <div className="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
           <time dateTime="2024-01-25">January 25, 2024</time>
           <span>•</span>
-          <span>10 min read</span>
+          <span>12 min read</span>
         </div>
       </header>
 
@@ -54,27 +49,16 @@ export default function PCMaintenanceGuide() {
             <a href="#introduction" className="text-blue-600 dark:text-blue-400 hover:underline">Introduction</a>
           </li>
           <li>
-            <a href="#hardware-maintenance" className="text-blue-600 dark:text-blue-400 hover:underline">Hardware Maintenance</a>
-            <ul className="ml-4 mt-2 space-y-2">
-              <li><a href="#cleaning" className="text-blue-600 dark:text-blue-400 hover:underline">Regular Cleaning</a></li>
-              <li><a href="#thermal-paste" className="text-blue-600 dark:text-blue-400 hover:underline">Thermal Paste Replacement</a></li>
-              <li><a href="#dust-management" className="text-blue-600 dark:text-blue-400 hover:underline">Dust Management</a></li>
-              <li><a href="#cable-management" className="text-blue-600 dark:text-blue-400 hover:underline">Cable Management</a></li>
-            </ul>
+            <a href="#cleaning" className="text-blue-600 dark:text-blue-400 hover:underline">Cleaning & Dust Management</a>
           </li>
           <li>
-            <a href="#software-optimization" className="text-blue-600 dark:text-blue-400 hover:underline">Software Optimization</a>
-            <ul className="ml-4 mt-2 space-y-2">
-              <li><a href="#windows-optimization" className="text-blue-600 dark:text-blue-400 hover:underline">Windows Optimization</a></li>
-              <li><a href="#driver-updates" className="text-blue-600 dark:text-blue-400 hover:underline">Driver Management</a></li>
-              <li><a href="#startup-programs" className="text-blue-600 dark:text-blue-400 hover:underline">Startup Programs</a></li>
-            </ul>
+            <a href="#software" className="text-blue-600 dark:text-blue-400 hover:underline">Software Maintenance</a>
           </li>
           <li>
-            <a href="#monitoring" className="text-blue-600 dark:text-blue-400 hover:underline">Performance Monitoring</a>
+            <a href="#hardware" className="text-blue-600 dark:text-blue-400 hover:underline">Hardware Checks</a>
           </li>
           <li>
-            <a href="#troubleshooting" className="text-blue-600 dark:text-blue-400 hover:underline">Common Issues & Solutions</a>
+            <a href="#optimization" className="text-blue-600 dark:text-blue-400 hover:underline">Performance Optimization</a>
           </li>
         </ul>
       </nav>
@@ -84,47 +68,66 @@ export default function PCMaintenanceGuide() {
         <section id="introduction">
           <h2>Introduction</h2>
           <p>
-            Regular maintenance is crucial for keeping your gaming PC performing at its best. Whether you've just built 
-            a new system or you're maintaining an existing one, this guide will help you establish good maintenance 
-            habits and optimize your PC for peak performance. We'll cover both hardware and software aspects of PC 
-            maintenance, providing step-by-step instructions and professional tips.
+            Regular maintenance is crucial for keeping your gaming PC running at peak performance. This guide will 
+            help you understand what maintenance tasks are necessary and how to perform them safely. Whether you&apos;re 
+            a seasoned PC builder or new to computer maintenance, we&apos;ve got you covered.
           </p>
         </section>
 
-        <section id="hardware-maintenance">
-          <h2>Hardware Maintenance</h2>
+        <section id="cleaning">
+          <h2>Cleaning & Dust Management</h2>
           <p>
-            Physical maintenance of your PC components is essential for longevity and optimal performance. Let's explore 
-            the key aspects of hardware maintenance that every PC owner should know.
+            Keeping your PC clean is essential for optimal performance and longevity. Here&apos;s what you need to do:
           </p>
+          <ul>
+            <li>Regular dust removal</li>
+            <li>Component cleaning</li>
+            <li>Thermal paste replacement</li>
+            <li>Fan maintenance</li>
+            <li>Case cleaning</li>
+          </ul>
+        </section>
 
-          <section id="cleaning">
-            <h3>Regular Cleaning</h3>
-            <div className="not-prose mb-6">
-              <div className="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-lg">
-                <h4 className="font-semibold text-lg mb-4">Essential Cleaning Tools</h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <ul className="list-disc list-inside space-y-2">
-                    <li>Compressed air can</li>
-                    <li>Microfiber cloths</li>
-                    <li>Isopropyl alcohol (90%+)</li>
-                    <li>Anti-static brush</li>
-                  </ul>
-                  <div className="text-sm">
-                    <p className="font-medium text-red-600 dark:text-red-400 mb-2">⚠️ Important Safety Tips:</p>
-                    <ul className="list-disc list-inside space-y-1">
-                      <li>Always power off and unplug</li>
-                      <li>Use anti-static protection</li>
-                      <li>Avoid vacuum cleaners</li>
-                      <li>Keep liquids away from components</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+        <section id="software">
+          <h2>Software Maintenance</h2>
+          <p>
+            Keep your system running smoothly with these software maintenance tasks:
+          </p>
+          <ul>
+            <li>Windows updates</li>
+            <li>Driver updates</li>
+            <li>Malware scanning</li>
+            <li>Disk cleanup</li>
+            <li>System optimization</li>
+          </ul>
+        </section>
 
-          {/* Continue with other sections... */}
+        <section id="hardware">
+          <h2>Hardware Checks</h2>
+          <p>
+            Regular hardware checks can prevent potential issues:
+          </p>
+          <ul>
+            <li>Temperature monitoring</li>
+            <li>Fan operation</li>
+            <li>Connection checks</li>
+            <li>Power supply testing</li>
+            <li>Component wear inspection</li>
+          </ul>
+        </section>
+
+        <section id="optimization">
+          <h2>Performance Optimization</h2>
+          <p>
+            Get the most out of your gaming PC with these optimization tips:
+          </p>
+          <ul>
+            <li>Startup management</li>
+            <li>Background processes</li>
+            <li>Game settings optimization</li>
+            <li>Overclocking (if applicable)</li>
+            <li>Storage optimization</li>
+          </ul>
         </section>
 
         {/* Related Articles */}
@@ -140,20 +143,20 @@ export default function PCMaintenanceGuide() {
                   Building Your Dream Gaming PC: Ultimate Guide 2024
                 </h3>
                 <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-                  Learn how to build a gaming PC with future maintenance in mind.
+                  Learn how to build a gaming PC that&apos;s easy to maintain.
                 </p>
               </div>
             </Link>
             <Link 
-              href="/guides/best-gaming-monitors-2024"
+              href="/guides/desk-setup-guide"
               className="group block bg-gray-50 dark:bg-gray-800/50 rounded-lg overflow-hidden hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
             >
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                  Best Gaming Monitors 2024
+                  Ultimate Gaming Desk Setup Guide
                 </h3>
                 <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-                  Find the perfect display to complement your well-maintained gaming PC.
+                  Create a workspace that makes PC maintenance easier.
                 </p>
               </div>
             </Link>

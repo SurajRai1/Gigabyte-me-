@@ -1,22 +1,17 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import React from 'react';
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Ultimate Gaming Desk Setup Guide: Create Your Perfect Workspace | GigabyteMe",
-  description: "Learn how to create the perfect gaming desk setup. From ergonomics and cable management to lighting and accessories, build a comfortable and stylish gaming workspace.",
-  keywords: "gaming desk setup, gaming workspace, desk organization, cable management, gaming accessories, ergonomic setup, RGB lighting, monitor mounting",
+  title: "Ultimate Gaming Desk Setup Guide | GigabyteMe",
+  description: "Create the perfect gaming environment with our comprehensive desk setup guide. Learn about ergonomics, cable management, and essential accessories.",
+  keywords: "gaming desk setup, ergonomic gaming, cable management, gaming accessories, desk organization",
   openGraph: {
-    title: "Ultimate Gaming Desk Setup Guide: Create Your Perfect Workspace",
-    description: "Transform your gaming space with our comprehensive desk setup guide. Expert tips on ergonomics, organization, and aesthetics.",
-    images: [
-      {
-        url: "https://images.unsplash.com/photo-1598550476439-6847785fcea6",
-        width: 1200,
-        height: 630,
-        alt: "Modern gaming desk setup with clean cable management",
-      },
-    ],
+    title: "Ultimate Gaming Desk Setup Guide | GigabyteMe",
+    description: "Create the perfect gaming environment with our comprehensive desk setup guide. Learn about ergonomics, cable management, and essential accessories.",
+    type: "article",
+    publishedTime: "2024-01-25",
+    authors: ["GigabyteMe Team"],
   },
 };
 
@@ -27,22 +22,22 @@ export default function DeskSetupGuide() {
       <header className="mb-8 sm:mb-12">
         <div className="flex flex-wrap gap-2 mb-4">
           <span className="inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900 px-2.5 py-0.5 text-xs font-medium text-blue-800 dark:text-blue-300">
-            Setup
+            Setup Guide
           </span>
           <span className="inline-flex items-center rounded-full bg-purple-100 dark:bg-purple-900 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:text-purple-300">
             Gaming
           </span>
           <span className="inline-flex items-center rounded-full bg-green-100 dark:bg-green-900 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:text-green-300">
-            Guide
+            Ergonomic
           </span>
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-          Ultimate Gaming Desk Setup Guide: Create Your Perfect Workspace
+          Ultimate Gaming Desk Setup Guide
         </h1>
         <div className="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
-          <time dateTime="2024-01-28">January 28, 2024</time>
+          <time dateTime="2024-01-25">January 25, 2024</time>
           <span>•</span>
-          <span>12 min read</span>
+          <span>10 min read</span>
         </div>
       </header>
 
@@ -55,25 +50,18 @@ export default function DeskSetupGuide() {
           </li>
           <li>
             <a href="#desk-selection" className="text-blue-600 dark:text-blue-400 hover:underline">Desk Selection</a>
-            <ul className="ml-4 mt-2 space-y-2">
-              <li><a href="#desk-size" className="text-blue-600 dark:text-blue-400 hover:underline">Size and Space</a></li>
-              <li><a href="#desk-type" className="text-blue-600 dark:text-blue-400 hover:underline">Types of Desks</a></li>
-              <li><a href="#ergonomics" className="text-blue-600 dark:text-blue-400 hover:underline">Ergonomic Considerations</a></li>
-            </ul>
           </li>
           <li>
-            <a href="#organization" className="text-blue-600 dark:text-blue-400 hover:underline">Organization</a>
-            <ul className="ml-4 mt-2 space-y-2">
-              <li><a href="#cable-management" className="text-blue-600 dark:text-blue-400 hover:underline">Cable Management</a></li>
-              <li><a href="#monitor-setup" className="text-blue-600 dark:text-blue-400 hover:underline">Monitor Setup</a></li>
-              <li><a href="#accessories" className="text-blue-600 dark:text-blue-400 hover:underline">Essential Accessories</a></li>
-            </ul>
+            <a href="#cable-management" className="text-blue-600 dark:text-blue-400 hover:underline">Cable Management</a>
           </li>
           <li>
-            <a href="#lighting" className="text-blue-600 dark:text-blue-400 hover:underline">Lighting Solutions</a>
+            <a href="#ergonomics" className="text-blue-600 dark:text-blue-400 hover:underline">Ergonomic Setup</a>
           </li>
           <li>
-            <a href="#maintenance" className="text-blue-600 dark:text-blue-400 hover:underline">Maintenance Tips</a>
+            <a href="#accessories" className="text-blue-600 dark:text-blue-400 hover:underline">Essential Accessories</a>
+          </li>
+          <li>
+            <a href="#lighting" className="text-blue-600 dark:text-blue-400 hover:underline">Lighting & Ambiance</a>
           </li>
         </ul>
       </nav>
@@ -83,48 +71,81 @@ export default function DeskSetupGuide() {
         <section id="introduction">
           <h2>Introduction</h2>
           <p>
-            Creating the perfect gaming desk setup is about more than just aesthetics – it's about building a 
-            comfortable, functional, and inspiring space that enhances your gaming experience. Whether you're a 
-            casual gamer or a professional streamer, this guide will help you design and organize your ideal 
-            gaming workspace, considering everything from ergonomics to cable management.
+            A well-organized gaming desk setup isn&apos;t just about aesthetics &mdash; it&apos;s about creating an 
+            environment that enhances your gaming experience and supports your health. This guide will help you 
+            create the perfect gaming workspace, whether you&apos;re starting from scratch or looking to upgrade 
+            your existing setup.
           </p>
         </section>
 
         <section id="desk-selection">
-          <h2>Desk Selection</h2>
+          <h2>Choosing the Right Desk</h2>
           <p>
-            The foundation of any great gaming setup is the desk itself. Let's explore the key factors to 
-            consider when choosing the perfect desk for your needs.
+            Your desk is the foundation of your gaming setup. Consider these factors when selecting your desk:
           </p>
+          <ul>
+            <li>Size and available space</li>
+            <li>Height adjustability</li>
+            <li>Material and durability</li>
+            <li>Cable management features</li>
+            <li>Additional features (USB ports, headphone hooks, etc.)</li>
+          </ul>
+        </section>
 
-          <section id="desk-size">
-            <h3>Size and Space</h3>
-            <div className="not-prose mb-6">
-              <div className="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-lg">
-                <h4 className="font-semibold text-lg mb-4">Space Requirements</h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div>
-                    <h5 className="font-medium mb-2">Minimum Dimensions</h5>
-                    <ul className="list-disc list-inside space-y-1 text-sm">
-                      <li>Width: 47" (120cm)</li>
-                      <li>Depth: 24" (60cm)</li>
-                      <li>Height: 28-30" (71-76cm)</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h5 className="font-medium mb-2">Recommended Setup</h5>
-                    <ul className="list-disc list-inside space-y-1 text-sm">
-                      <li>Single monitor: 55" width</li>
-                      <li>Dual monitor: 63" width</li>
-                      <li>Ultrawide: 59" width</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+        <section id="cable-management">
+          <h2>Cable Management</h2>
+          <p>
+            A clean, organized setup starts with proper cable management. Here are some tips to keep your cables 
+            organized and out of sight:
+          </p>
+          <ul>
+            <li>Use cable ties and clips</li>
+            <li>Route cables through desk grommets</li>
+            <li>Consider a cable management tray</li>
+            <li>Label your cables for easy identification</li>
+            <li>Use wireless peripherals where possible</li>
+          </ul>
+        </section>
 
-          {/* Continue with other sections... */}
+        <section id="ergonomics">
+          <h2>Ergonomic Setup</h2>
+          <p>
+            Proper ergonomics are crucial for long gaming sessions. Follow these guidelines for a comfortable setup:
+          </p>
+          <ul>
+            <li>Monitor at eye level</li>
+            <li>Arms at 90-degree angles</li>
+            <li>Feet flat on the floor</li>
+            <li>Good lumbar support</li>
+            <li>Regular breaks and stretching</li>
+          </ul>
+        </section>
+
+        <section id="accessories">
+          <h2>Essential Accessories</h2>
+          <p>
+            Enhance your gaming experience with these must-have accessories:
+          </p>
+          <ul>
+            <li>Monitor stand or arm</li>
+            <li>Desk pad or mouse mat</li>
+            <li>Headphone stand</li>
+            <li>USB hub</li>
+            <li>Desk organizers</li>
+          </ul>
+        </section>
+
+        <section id="lighting">
+          <h2>Lighting & Ambiance</h2>
+          <p>
+            Create the perfect gaming atmosphere with proper lighting:
+          </p>
+          <ul>
+            <li>RGB desk lighting</li>
+            <li>Monitor bias lighting</li>
+            <li>Room lighting control</li>
+            <li>Ambient lighting effects</li>
+          </ul>
         </section>
 
         {/* Related Articles */}
@@ -137,10 +158,10 @@ export default function DeskSetupGuide() {
             >
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                  Best Gaming Monitors 2024
+                  Best Gaming Monitors 2024: Ultimate Buyer&apos;s Guide
                 </h3>
                 <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-                  Find the perfect display to complete your gaming setup.
+                  Find the perfect monitor to complete your gaming setup.
                 </p>
               </div>
             </Link>
@@ -150,10 +171,10 @@ export default function DeskSetupGuide() {
             >
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                  Building Your Dream Gaming PC
+                  Building Your Dream Gaming PC: Ultimate Guide 2024
                 </h3>
                 <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-                  Build the perfect gaming PC to power your new workspace.
+                  Learn how to build the perfect gaming PC to match your setup.
                 </p>
               </div>
             </Link>

@@ -18,8 +18,8 @@ export default function AIIndex() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             AI & Machine Learning
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400">
-            Discover the latest developments in AI technology and learn how to leverage artificial intelligence in your projects.
+          <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+            Discover how artificial intelligence is transforming the way we develop software. From code generation to automated testing, we&apos;ll explore the latest AI tools and techniques.
           </p>
         </header>
 

@@ -1,22 +1,17 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import React from 'react';
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "The Rise of AI in Code Generation: A Developer's Guide | GigabyteMe",
-  description: "Master AI-powered code generation with our comprehensive guide. Learn how to effectively use tools like GitHub Copilot, ChatGPT, and other AI assistants for software development.",
-  keywords: "AI code generation, GitHub Copilot, ChatGPT coding, AI programming, code automation, AI development tools, machine learning coding",
+  title: "AI Code Generation in 2024: A Developer&apos;s Complete Guide | GigabyteMe",
+  description: "Learn how to leverage AI code generation tools to boost your development workflow. A comprehensive guide for modern developers.",
+  keywords: "AI code generation, GitHub Copilot, ChatGPT, code completion, developer tools, programming",
   openGraph: {
-    title: "The Rise of AI in Code Generation: A Developer's Guide",
-    description: "Discover how to leverage AI-powered tools to enhance your coding workflow and boost productivity in software development.",
-    images: [
-      {
-        url: "https://images.unsplash.com/photo-1677442136019-21780ecad995",
-        width: 1200,
-        height: 630,
-        alt: "AI code generation visualization",
-      },
-    ],
+    title: "AI Code Generation in 2024: A Developer&apos;s Complete Guide | GigabyteMe",
+    description: "Learn how to leverage AI code generation tools to boost your development workflow. A comprehensive guide for modern developers.",
+    type: 'article',
+    publishedTime: '2024-01-25',
+    authors: ['GigabyteMe Team'],
   },
 };
 

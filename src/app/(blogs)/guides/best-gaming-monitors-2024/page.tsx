@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import React from 'react';
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Gaming Monitors 2024: Ultimate Buyer's Guide | GigabyteMe",
+  title: "Best Gaming Monitors 2024: Ultimate Buyer&apos;s Guide | GigabyteMe",
   description: "Find the perfect gaming monitor with our comprehensive 2024 guide. Compare resolution, refresh rates, panel types, and more to make an informed decision.",
   keywords: "gaming monitors 2024, best gaming displays, high refresh rate monitors, 4K gaming monitors, ultrawide monitors, monitor buying guide",
   openGraph: {
-    title: "Best Gaming Monitors 2024: Ultimate Buyer's Guide",
+    title: "Best Gaming Monitors 2024: Ultimate Buyer&apos;s Guide",
     description: "Expert recommendations for gaming monitors across all budgets and use cases. From competitive esports to immersive single-player experiences.",
     images: [
       {
