@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function AICodeGenerationGuide() {
   return (
-    <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <header className="mb-12">
         <div className="mb-6">
           <span className="inline-flex items-center rounded-full bg-purple-100 dark:bg-purple-900 px-3 py-0.5 text-sm font-medium text-purple-800 dark:text-purple-300">
@@ -231,6 +231,6 @@ export default function AICodeGenerationGuide() {
           </div>
         </section>
       </div>
-    </article>
+    </div>
   );
 } 
