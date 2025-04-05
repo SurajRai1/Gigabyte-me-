@@ -104,25 +104,25 @@ export default function Navigation() {
         >
           <nav className="flex flex-col p-4 space-y-1">
             <Link 
-              href="/programming" 
+              href="/services" 
               className="px-4 py-3 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors active:scale-[0.98] touch-manipulation text-base"
               onClick={toggleMobileMenu}
             >
-              Programming
+              Services
             </Link>
             <Link 
-              href="/ai" 
+              href="/solutions" 
               className="px-4 py-3 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors active:scale-[0.98] touch-manipulation text-base"
               onClick={toggleMobileMenu}
             >
-              AI
+              Solutions
             </Link>
             <Link 
-              href="/guides" 
+              href="/resources" 
               className="px-4 py-3 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors active:scale-[0.98] touch-manipulation text-base"
               onClick={toggleMobileMenu}
             >
-              Guides
+              Resources
             </Link>
             <Link 
               href="/about" 

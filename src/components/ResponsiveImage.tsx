@@ -72,13 +72,19 @@ export default function ResponsiveImage({
             className="absolute bottom-0 right-0 bg-black/50 text-white text-xs px-2 py-1 rounded-tl-lg"
             onClick={handleCreditClick}
           >
-            {credit.url ? (
+            {credit.url && insideLink ? (
+              <button 
+                type="button"
+                className="hover:underline"
+              >
+                © {credit.name}
+              </button>
+            ) : credit.url ? (
               <a 
                 href={credit.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
-                onClick={e => insideLink && e.preventDefault()}
               >
                 © {credit.name}
               </a>
