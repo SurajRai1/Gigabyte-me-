@@ -8,9 +8,62 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "GigabyteMe | Your Ultimate Tech Hub",
-  description: "Your go-to destination for everything tech - from gadgets and computers to AI, software, and programming languages.",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0",
+  metadataBase: new URL('https://gigabyteme.com'),
+  title: {
+    default: 'GigabyteMe | Custom PC Building & Tech Solutions',
+    template: '%s | GigabyteMe'
+  },
+  description: 'Professional custom PC building, web development, and tech consulting services. Expert solutions for gaming PCs, workstations, and digital transformation.',
+  keywords: ['custom pc building', 'gaming pc', 'workstation pc', 'web development', 'tech consulting', 'it solutions', 'tech services'],
+  authors: [{ name: 'GigabyteMe Team' }],
+  creator: 'GigabyteMe',
+  publisher: 'GigabyteMe',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://gigabyteme.com',
+    siteName: 'GigabyteMe',
+    title: 'GigabyteMe | Custom PC Building & Tech Solutions',
+    description: 'Professional custom PC building, web development, and tech consulting services. Expert solutions for gaming PCs, workstations, and digital transformation.',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'GigabyteMe - Custom PC Building & Tech Solutions'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'GigabyteMe | Custom PC Building & Tech Solutions',
+    description: 'Professional custom PC building, web development, and tech consulting services. Expert solutions for gaming PCs, workstations, and digital transformation.',
+    images: ['/images/twitter-image.jpg'],
+    creator: '@gigabyteme',
+    site: '@gigabyteme'
+  },
   other: {
     "google-adsense-account": "ca-pub-6925559648076385"
   }
@@ -43,14 +96,14 @@ export default function RootLayout({
                 </Link>
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center gap-4 lg:gap-6">
-                  <Link href="/programming" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all hover:scale-105">
-                    Programming
+                  <Link href="/services" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all hover:scale-105">
+                    Services
                   </Link>
-                  <Link href="/ai" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all hover:scale-105">
-                    AI
+                  <Link href="/solutions" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all hover:scale-105">
+                    Solutions
                   </Link>
-                  <Link href="/guides" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all hover:scale-105">
-                    Guides
+                  <Link href="/resources" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all hover:scale-105">
+                    Resources
                   </Link>
                   <Link href="/about" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all hover:scale-105">
                     About
@@ -79,44 +132,48 @@ export default function RootLayout({
                   </span>
                 </Link>
                 <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">
-                  Your ultimate destination for everything tech - from the latest gadgets and computer builds to cutting-edge AI, software development, and programming insights.
+                  Your trusted partner for custom PC builds, web development solutions, and tech consulting services. We combine expertise with innovation to deliver exceptional results.
                 </p>
               </div>
               <div className="space-y-3">
                 <h3 className="text-sm font-medium text-gray-900 dark:text-white">Categories</h3>
                 <ul className="space-y-2">
                   <li>
-                    <Link href="/programming" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all hover:translate-x-1 inline-block touch-manipulation py-1">
-                      Programming
+                    <Link href="/services" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all hover:translate-x-1 inline-block touch-manipulation py-1">
+                      Services
                     </Link>
                   </li>
                   <li>
-                    <Link href="/ai" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all hover:translate-x-1 inline-block touch-manipulation py-1">
-                      AI
+                    <Link href="/solutions" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all hover:translate-x-1 inline-block touch-manipulation py-1">
+                      Solutions
                     </Link>
                   </li>
                   <li>
-                    <Link href="/guides" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all hover:translate-x-1 inline-block touch-manipulation py-1">
-                      Guides
+                    <Link href="/resources" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all hover:translate-x-1 inline-block touch-manipulation py-1">
+                      Resources
                     </Link>
                   </li>
                 </ul>
               </div>
               <div className="space-y-3">
-                <h3 className="text-sm font-medium text-gray-900 dark:text-white">Stay Updated</h3>
-                <form className="flex flex-col gap-2">
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="w-full px-3 h-10 text-sm border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 dark:bg-gray-800 dark:text-white transition-all hover:border-blue-500 dark:hover:border-blue-400"
-                  />
-                  <button
-                    type="submit"
-                    className="w-full h-10 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 rounded-md transition-all hover:scale-[1.02] active:scale-[0.98] touch-manipulation"
-                  >
-                    Subscribe
-                  </button>
-                </form>
+                <h3 className="text-sm font-medium text-gray-900 dark:text-white">Company</h3>
+                <ul className="space-y-2">
+                  <li>
+                    <Link href="/about" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all hover:translate-x-1 inline-block touch-manipulation py-1">
+                      About Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/contact" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all hover:translate-x-1 inline-block touch-manipulation py-1">
+                      Contact
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/portfolio" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-all hover:translate-x-1 inline-block touch-manipulation py-1">
+                      Portfolio
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
             <div className="mt-6 pt-6 sm:mt-8 sm:pt-8 border-t border-gray-100 dark:border-gray-800">
