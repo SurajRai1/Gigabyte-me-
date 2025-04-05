@@ -18,7 +18,7 @@ export default function ContactPage() {
           Contact Us
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          Ready to start your project? Get in touch for a free consultation and quote. We'll help you choose the right solution for your needs.
+          Ready to start your project? Get in touch for a free consultation and quote. We&apos;ll help you choose the right solution for your needs.
         </p>
       </section>
 

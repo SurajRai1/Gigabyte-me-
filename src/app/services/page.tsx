@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Professional PC Building & Tech Services | GigabyteMe',
@@ -49,9 +50,11 @@ export default function ServicesPage() {
           {/* Gaming PC Building */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
             <div className="relative h-48">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1587202372555-e8c0c2e9f38f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800&q=80"
                 alt="Gaming PC Building"
+                width={1200}
+                height={800}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -99,9 +102,11 @@ export default function ServicesPage() {
           {/* Workstation Building */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
             <div className="relative h-48">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800&q=80"
                 alt="Professional Workstation Building"
+                width={1200}
+                height={800}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -149,9 +154,11 @@ export default function ServicesPage() {
           {/* Custom Solutions */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
             <div className="relative h-48">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800&q=80"
                 alt="Custom PC Solutions"
+                width={1200}
+                height={800}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -256,7 +263,7 @@ export default function ServicesPage() {
       <section className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 sm:p-12 text-center text-white">
         <h2 className="text-3xl font-bold mb-4">Ready to Build Your Dream PC?</h2>
         <p className="text-lg mb-8 opacity-90">
-          Get in touch for a free consultation and quote. We'll help you create the perfect PC for your needs.
+          Get in touch for a free consultation and quote. We&apos;ll help you create the perfect PC for your needs.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

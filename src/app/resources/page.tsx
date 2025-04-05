@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Tech Resources & Guides | GigabyteMe',
@@ -185,9 +186,11 @@ export default function ResourcesPage() {
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
             <div className="relative h-48">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1587202372746-b43a2416e2ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800&q=80"
                 alt="Ultimate Gaming Setup Case Study"
+                width={1200}
+                height={800}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -208,9 +211,11 @@ export default function ResourcesPage() {
           </div>
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
             <div className="relative h-48">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800&q=80"
                 alt="E-commerce Migration Case Study"
+                width={1200}
+                height={800}
                 className="w-full h-full object-cover"
               />
             </div>

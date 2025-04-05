@@ -287,7 +287,7 @@ export default function PricingPage() {
               Do you offer custom packages?
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Yes, we can create custom packages tailored to your specific needs and budget.
+              Yes, we&apos;ll work with you to create a custom package that meets your specific needs and budget.
             </p>
           </div>
           <div>
@@ -309,6 +309,14 @@ export default function PricingPage() {
           <div>
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
               Do you offer refunds?
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300">
+              We have a satisfaction guarantee and will work with you to ensure you're happy with our services.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+              What&apos;s your refund policy?
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
               We have a satisfaction guarantee and will work with you to ensure you're happy with our services.

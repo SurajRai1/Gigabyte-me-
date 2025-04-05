@@ -19,7 +19,20 @@ export async function submitContactForm(formData: FormData) {
     }
 
     // Here you would typically:
-    // 1. Send email notification
+    // 1. Send email notification with all form data
+    const formattedMessage = `
+      New Contact Form Submission:
+      Name: ${firstName} ${lastName}
+      Email: ${email}
+      Phone: ${phone || 'Not provided'}
+      Service: ${service}
+      Budget: ${budget || 'Not specified'}
+      Message: ${message}
+    `;
+
+    // Log the formatted message (replace with your email sending logic)
+    console.log(formattedMessage);
+
     // 2. Store in database
     // 3. Create ticket in your CRM
     // For now, we'll just simulate a delay

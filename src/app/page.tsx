@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import ResponsiveImage from "@/components/ResponsiveImage";
-import { images } from "@/config/images";
 
 export const metadata: Metadata = {
   title: 'GigabyteMe | Custom PC Building & Tech Solutions',
@@ -127,7 +125,7 @@ export default function HomePage() {
             <div className="p-6">
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Tech Consulting</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-6">
-                Expert guidance on technology strategy, infrastructure, and digital transformation.
+                We&apos;re here to help you achieve your tech goals.
               </p>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300 mb-6">
                 <li>• IT Strategy</li>
@@ -152,9 +150,11 @@ export default function HomePage() {
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="group relative rounded-2xl overflow-hidden shadow-lg">
-            <img 
-              src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800&q=80"
+            <Image 
+              src="https://images.unsplash.com/photo-1587202372555-e8c0c2e9f38f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800&q=80"
               alt="Gaming PC Build"
+              width={1200}
+              height={800}
               className="w-full h-[300px] object-cover transition-transform duration-300 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
@@ -163,9 +163,11 @@ export default function HomePage() {
             </div>
           </div>
           <div className="group relative rounded-2xl overflow-hidden shadow-lg">
-            <img 
+            <Image 
               src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800&q=80"
               alt="Modern E-commerce Platform"
+              width={1200}
+              height={800}
               className="w-full h-[300px] object-cover transition-transform duration-300 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
