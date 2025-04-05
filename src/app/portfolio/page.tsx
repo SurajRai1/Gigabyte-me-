@@ -228,7 +228,7 @@ export default function PortfolioPage() {
                 IT Infrastructure Overhaul
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Modernized a company's IT infrastructure with custom workstations and cloud integration:
+                Modernized a company&apos;s IT infrastructure with custom workstations and cloud integration:
               </p>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300 mb-6">
                 <li>• 60% improvement in workflow efficiency</li>

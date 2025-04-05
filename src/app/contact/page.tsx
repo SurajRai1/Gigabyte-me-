@@ -136,7 +136,7 @@ export default function ContactPage() {
                   View Our Portfolio →
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Explore our past projects and see how we've helped other clients achieve their goals.
+                  Explore our past projects and see how we&apos;ve helped other clients achieve their goals.
                 </p>
               </div>
             </Link>
@@ -162,7 +162,7 @@ export default function ContactPage() {
               Privacy Notice
             </h2>
             <p className="text-gray-600 dark:text-gray-300 text-sm">
-              By submitting this form, you agree to our privacy policy. We'll only use your information to respond to your inquiry and provide relevant services. We never share your data with third parties without consent.
+              By submitting this form, you agree to our privacy policy. We&apos;ll only use your information to respond to your inquiry and provide relevant services. We never share your data with third parties without consent.
             </p>
           </div>
         </div>

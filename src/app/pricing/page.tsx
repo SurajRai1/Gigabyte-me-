@@ -311,7 +311,7 @@ export default function PricingPage() {
               Do you offer refunds?
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
-              We have a satisfaction guarantee and will work with you to ensure you're happy with our services.
+              We have a satisfaction guarantee and will work with you to ensure you&apos;re happy with our services.
             </p>
           </div>
           <div>
@@ -319,7 +319,7 @@ export default function PricingPage() {
               What&apos;s your refund policy?
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
-              We have a satisfaction guarantee and will work with you to ensure you're happy with our services.
+              We have a satisfaction guarantee and will work with you to ensure you&apos;re happy with our services.
             </p>
           </div>
         </div>
@@ -329,7 +329,7 @@ export default function PricingPage() {
       <section className="bg-blue-600 text-white rounded-lg p-8 text-center">
         <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
         <p className="text-xl mb-8">
-          Contact us today for a free consultation and let's discuss your project.
+          Contact us today for a free consultation and let&apos;s discuss your project.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

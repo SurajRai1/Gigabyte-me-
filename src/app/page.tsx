@@ -244,7 +244,7 @@ export default function HomePage() {
         <div className="bg-blue-600 text-white rounded-lg p-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
           <p className="text-xl mb-8">
-            Contact us today for a free consultation and let's discuss your project.
+            Contact us today for a free consultation and let&apos;s discuss your project.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
